@@ -1,0 +1,16 @@
+
+name: RulesPlugin
+main: com.example.rulesplugin.RulesPlugin
+version: 1.0
+api-version: 1.16
+commands:
+  rules:
+    description: Displays the server rules.
+  createrules:
+    description: Creates or updates the server rules.
+    aliases: [crules]
+    permission: rulesplugin.createrules
+permissions:
+  rulesplugin.createrules:
+    description: Allows setting the server rules.
+    default: op
